@@ -17,7 +17,9 @@ export default function Home() {
   const [confirmationLevel, setConfirmationLevel] = useState(0);
 
   const handleNo = () => {
-    if (confirmationLevel < confirmationMessages.length - 1) {
+    if (state === "main") {
+      setState("confirmation");
+    } else if (confirmationLevel < confirmationMessages.length - 1) {
       setConfirmationLevel(confirmationLevel + 1);
     } else {
       setState("yay");
