@@ -55,7 +55,7 @@ export default function Home() {
       {/* Main content */}
       {!accepted && !rejected ? (
         <div className="text-center z-10 animate-fadeIn">
-          <h1 className="text-8xl font-bold text-pink-800 mb-8">
+          <h1 className="lg:text-8xl text-4xl font-bold text-pink-800 mb-8">
             Would you be my Valentine?
           </h1>
           <div className="flex gap-6 justify-center">
